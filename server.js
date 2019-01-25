@@ -16,10 +16,10 @@ const server = http.createServer((req, res) => {
   })
 })
 
-server.listen(3000, (err) => {
+server.listen(process.env.PORT || 3000, (err) => {
   if (err) {
     console.log(err)
   } else {
-    console.log(`Server running on http://localhost:3000`)
+    console.log('Server running')
   }
 })
